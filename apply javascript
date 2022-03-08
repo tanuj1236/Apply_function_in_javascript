@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      const person = {
+          FullName:function()
+          {
+            return  this.firstname + this.lastname;
+          }
+      } 
+      const person1=function(fname,lname){
+         this.firstname=fname;
+         this.lastname=lname
+      }
+
+      const person2={
+          firstname:"vipul",
+          lastname:"pal"
+      }
+
+     console.log(person.FullName.apply(person1("tanuj","kumar")));
+    console.log(person.FullName.apply(person2));
+      
+      
+
+    </script>
+</body>
+</html>
